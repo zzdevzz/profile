@@ -1,0 +1,124 @@
+body{
+  /* background-color: black; */
+  text-align: center;
+  font-family: 'roboto', sans-serif;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index:-100;
+  opacity: .9;
+  /* background-color: black; */
+}
+
+h1, h2, h3 {
+  font-weight: bolder;
+  color: #FFFFFF;
+}
+
+p {
+  color: #D3D3D3;
+}
+
+.profile-text{
+  margin: 1rem auto;
+  padding: 0.5rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 30%;
+  box-shadow: 1px 2px 5px rgba(173, 216, 230, 0.5);
+  margin: .75rem
+}
+
+h1{
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  letter-spacing: normal;
+}
+
+h2{
+  margin-top: .15rem;
+  font-size: medium;
+}
+
+.text-highlight{
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-decoration: underline;
+}
+/* .container{
+  background: rgba(10,10,10,.8);
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  z-index: 150px;
+} */
+.content{
+  /* background: rgba(255, 255, 255, 0.4); */
+  background: rgba(10,10,10,.4);
+  border-radius: 10px;
+  /* background: linear-gradient(128deg, rgba(6,7,48,1) 0%, rgba(136,107,254,1) 82%, rgba(188,182,255,1) 100%); */
+  /* background-color: rgba(232, 232, 232,.6); */
+  box-shadow: 5px 5px 5px rgba(150, 147, 155,0.7);
+  width: 800px;
+  padding: .5rem 1rem;
+  margin: 3rem auto;
+}
+
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: .5rem .75rem;
+  border-radius: 10px;
+  background: rgb(255,166,0);
+  background: linear-gradient(90deg, rgba(255,166,0,1) 0%, rgba(255,235,0,1) 100%);
+  box-shadow: 1px 2px 5px rgba(86, 66, 86, 1);
+  border: 1px solid #e12301;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+.button:hover {
+  box-shadow: 1px 1px 10px #FC814A;
+}
+
+.small-text{
+  font-size: 50%;
+  color: #77B0AA;
+  margin-left: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+ul li {
+  display: inline;
+  margin: 0 .25rem;
+}
+
+.fa-brands{
+  color: #43aafe;
+}
+
+@media (max-width: 700px) {
+  .content {
+    width: 80%
+  }
+}
+
+@media (max-width: 380px) {
+  .content {
+    width: 300px
+  }
+}
