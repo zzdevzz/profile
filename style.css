@@ -85,7 +85,7 @@ h2{
 }
 
 .button:hover {
-  box-shadow: 1px 1px 10px #FC814A;
+  box-shadow: 2px 2px 15px #FC814A;
   padding: .5rem 1rem;
 }
 
@@ -133,11 +133,26 @@ ul li {
   width: 31%;
   min-width: 200px;
   object-fit: cover;
+  margin-bottom: 1rem;
 }
+
+.containerMeme{
+  max-height: 0;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all 0.5s;
+}
+
+.show{
+  max-height: fit-content;
+  opacity: 1;
+  transform: scaleY(1);
+}
+
 
 .footer-text{
   opacity: .5;
-  margin-top: 3rem;
+  margin-top: 1rem;
   display: inline-block;
   color: whitesmoke;
   text-decoration: none;
@@ -156,17 +171,4 @@ ul li {
     width: 100%;
     margin: 1rem 0;
   }
-}
-
-.containerMeme{
-  max-height: 0;
-  opacity: 0;
-  transform: scaleY(0);
-  transition: all 0.5s;
-}
-
-.show{
-  max-height: fit-content;
-  opacity: 1;
-  transform: scaleY(1);
 }
